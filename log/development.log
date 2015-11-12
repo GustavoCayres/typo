@@ -1,0 +1,1059 @@
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/saasbook/Documents/typo/config/environment.rb:5)
+TypoPlugins: just registered plugin [TypoPlugins::Gravatar] for :avatar target.
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to InitialSchema (1)
+Migrating to AddUserEmail (2)
+Migrating to AddArticleUserId (3)
+Migrating to AddSidebars (4)
+Migrating to AddCacheTable (5)
+Migrating to AddPages (6)
+Migrating to AddPermalink (7)
+Migrating to AddPageTitle (8)
+Migrating to AddArticleGuid (9)
+Migrating to AddTags (10)
+Migrating to AddArticleId (11)
+Migrating to EnlargeSettings (12)
+Migrating to AddTextfilters (13)
+Migrating to MoveTextFilterToTextFilterId (14)
+Migrating to ConvertMysqlToInnodb (15)
+Migrating to FixIsPrimaryPostgres (16)
+Migrating to AddCommentUserId (17)
+Migrating to AddGuids (18)
+Migrating to AddWhiteboardsToContent (19)
+Migrating to SuperclassArticles (20)
+Migrating to SuperclassComments (21)
+Migrating to SuperclassTrackbacks (22)
+Migrating to SuperclassPages (23)
+Migrating to CleanupContents (24)
+Migrating to AddItunesMetadata (25)
+Migrating to AddRedirectTable (26)
+Migrating to SetCommentPublishedFlag (27)
+Migrating to RenameRedirectTo (28)
+Migrating to AddUserNotification (29)
+Migrating to IndexSessions (30)
+Migrating to AddNotificationsTable (31)
+Migrating to AddJabberNotification (32)
+Migrating to AddCountCaching (33)
+Migrating to BoolifyPublished (34)
+Migrating to BoolifyContentAllowFoo (35)
+Migrating to AddTagDisplayName (36)
+Migrating to EnlargeIpField (37)
+Migrating to AddBlogObject (38)
+Migrating to SerializeBlogAttributes (39)
+Migrating to AttachContentToBlog (40)
+Migrating to FixupDefaultSidebars (41)
+Migrating to RemoveSidebarStagedConfig (42)
+Migrating to CreateTriggers (43)
+Migrating to AddPublishedAtToContent (44)
+Migrating to FixContentsPublishedDefault (45)
+Migrating to FixupForthcomingPublications (46)
+Migrating to AddContentStateField (47)
+Migrating to RemoveCountCaching (48)
+Migrating to MoveFeedbackToNewStateMachine (49)
+Migrating to AddStatusConfirmedFieldToContent (50)
+Migrating to FixCanonicalServerUrl (51)
+Migrating to RemoveCachedHtml (52)
+Migrating to PromoteCanonicalServerUrl (53)
+Migrating to UpgradeSidebarObjects (54)
+Migrating to LinkSidebarsToBlog (55)
+Migrating to CreateNotifications (56)
+Migrating to AddCategorizationModel (57)
+Migrating to SeparateEntriesAndFeedback (58)
+Migrating to CleanupFeedbackTable (59)
+Migrating to CleanupContentsTable (60)
+Migrating to ConvertTitlePrefixSetting (61)
+Migrating to AddSitealizerPlugin (62)
+Migrating to RejigStateField (63)
+Migrating to AddUsersProfile (64)
+Migrating to AddUsersRights (65)
+Migrating to FixProfiles (66)
+Migrating to RemoveBlogIds (67)
+Migrating to FixGrants (68)
+Migrating to AddModulesToProfile (69)
+Migrating to AddUsersToNonAdmins (70)
+Migrating to FixTagsNaming (71)
+Migrating to AddRememberToken (72)
+Migrating to AddMetaAndSubcategories (73)
+Migrating to AddRememberTokenExpiresAt (74)
+Migrating to MoveEditorToUser (75)
+Migrating to FixUsersEmptyEmail (76)
+Migrating to FixUserlessArticles (77)
+Migrating to AddTextfilterToUsers (78)
+Migrating to MoveEditorAsString (79)
+Migrating to AddStateToUser (80)
+Migrating to CreateCacheInformations (81)
+Migrating to AddUsersOptions (82)
+Migrating to AddUsersDisplayPerms (83)
+Migrating to MoveUsersToProfiles (84)
+Migrating to AddArticleParentDraft (85)
+Migrating to AddUserLastConnection (86)
+Migrating to DropBlacklistPatterns (87)
+Migrating to DropSessionTable (88)
+Migrating to DropCacheInformationTable (89)
+Migrating to RemoveKeywordsFromPosts (90)
+Migrating to AddsPasswordProtectionToPosts (91)
+Migrating to DropsProfileRightsPrimaryKey (92)
+Migrating to AddRedirectionsModel (93)
+Migrating to FixExtendedOnRssBehavior (94)
+Migrating to AddsSeoToProfiles (95)
+Migrating to AddOriginToRedirects (96)
+Migrating to FixNofollowOptionsBehavior (97)
+Migrating to AddUsersSettings (98)
+Migrating to SplitsContentRulesArticlesPages (99)
+Migrating to AddsContentSettings (100)
+Migrating to AddsContentType (101)
+Migrating to FixesExistingArticlesWithNoType (102)
+Migrating to ReallyUpdateExistingArticlesWithNilOrEmptyPostType (103)
+Migrating to AddsCreatedAtToRedirects (104)
+  [1m[35mSQL (0.6ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (5.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("articles_tags")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("blogs")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("categories")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_info('index_categories_on_permalink')[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("categorizations")
+  [1m[36mSQL (0.2ms)[0m  [1mPRAGMA index_list("contents")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_contents_on_text_filter_id')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_contents_on_published')[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("feedback")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_feedback_on_text_filter_id')[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_info('index_feedback_on_article_id')
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("notifications")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("page_caches")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_page_caches_on_name')[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("pings")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_pings_on_article_id')[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("post_types")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("profiles")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("profiles_rights")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("redirections")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("redirects")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("resources")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("rights")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("sidebars")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("sitealizer")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("tags")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("text_filters")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("triggers")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/saasbook/Documents/typo/config/environment.rb:5)
+TypoPlugins: just registered plugin [TypoPlugins::Gravatar] for :avatar target.
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.3ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (23.9ms)[0m  CREATE TABLE "articles_tags" ("article_id" integer, "tag_id" integer) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.1ms)[0m  CREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "settings" text, "base_url" varchar(255)) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (5.1ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "position" integer, "permalink" varchar(255), "keywords" text, "description" text, "parent_id" integer) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("categories")[0m
+  [1m[35mSQL (6.1ms)[0m  CREATE INDEX "index_categories_on_permalink" ON "categories" ("permalink")
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (28.9ms)[0m  CREATE TABLE "categorizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "article_id" integer, "category_id" integer, "is_primary" boolean) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (22.3ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "title" varchar(255), "author" varchar(255), "body" text, "extended" text, "excerpt" text, "created_at" datetime, "updated_at" datetime, "user_id" integer, "permalink" varchar(255), "guid" varchar(255), "text_filter_id" integer, "whiteboard" text, "name" varchar(255), "published" boolean DEFAULT 'f', "allow_pings" boolean, "allow_comments" boolean, "published_at" datetime, "state" varchar(255), "parent_id" integer, "settings" text, "post_type" varchar(255) DEFAULT 'read') 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("contents")[0m
+  [1m[35mSQL (5.9ms)[0m  CREATE INDEX "index_contents_on_published" ON "contents" ("published")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("contents")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_contents_on_published')
+  [1m[36mSQL (6.1ms)[0m  [1mCREATE INDEX "index_contents_on_text_filter_id" ON "contents" ("text_filter_id")[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (10.7ms)[0m  [1mCREATE TABLE "feedback" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "title" varchar(255), "author" varchar(255), "body" text, "excerpt" text, "created_at" datetime, "updated_at" datetime, "user_id" integer, "guid" varchar(255), "text_filter_id" integer, "whiteboard" text, "article_id" integer, "email" varchar(255), "url" varchar(255), "ip" varchar(40), "blog_name" varchar(255), "published" boolean DEFAULT 'f', "published_at" datetime, "state" varchar(255), "status_confirmed" boolean) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("feedback")
+  [1m[36mSQL (13.5ms)[0m  [1mCREATE INDEX "index_feedback_on_article_id" ON "feedback" ("article_id")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("feedback")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_feedback_on_article_id')[0m
+  [1m[35mSQL (36.4ms)[0m  CREATE INDEX "index_feedback_on_text_filter_id" ON "feedback" ("text_filter_id")
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (5.9ms)[0m  CREATE TABLE "notifications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content_id" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.4ms)[0m  CREATE TABLE "page_caches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("page_caches")[0m
+  [1m[35mSQL (5.7ms)[0m  CREATE INDEX "index_page_caches_on_name" ON "page_caches" ("name")
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.4ms)[0m  CREATE TABLE "pings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "article_id" integer, "url" varchar(255), "created_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("pings")[0m
+  [1m[35mSQL (5.0ms)[0m  CREATE INDEX "index_pings_on_article_id" ON "pings" ("article_id")
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (8.3ms)[0m  CREATE TABLE "post_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "permalink" varchar(255), "description" varchar(255)) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (8.0ms)[0m  CREATE TABLE "profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "label" varchar(255), "nicename" varchar(255), "modules" text) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (5.8ms)[0m  CREATE TABLE "profiles_rights" ("profile_id" integer, "right_id" integer) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.6ms)[0m  CREATE TABLE "redirections" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content_id" integer, "redirect_id" integer) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.0ms)[0m  CREATE TABLE "redirects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "from_path" varchar(255), "to_path" varchar(255), "origin" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.3ms)[0m  CREATE TABLE "resources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "size" integer, "filename" varchar(255), "mime" varchar(255), "created_at" datetime, "updated_at" datetime, "article_id" integer, "itunes_metadata" boolean, "itunes_author" varchar(255), "itunes_subtitle" varchar(255), "itunes_duration" integer, "itunes_summary" text, "itunes_keywords" varchar(255), "itunes_category" varchar(255), "itunes_explicit" boolean) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.1ms)[0m  CREATE TABLE "rights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.7ms)[0m  CREATE TABLE "sidebars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "active_position" integer, "config" text, "staged_position" integer, "type" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.9ms)[0m  CREATE TABLE "sitealizer" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "path" varchar(255), "ip" varchar(255), "referer" varchar(255), "language" varchar(255), "user_agent" varchar(255), "created_at" datetime, "created_on" date) 
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.9ms)[0m  CREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime, "display_name" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.0ms)[0m  CREATE TABLE "text_filters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "markup" varchar(255), "filters" text, "params" text) 
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.3ms)[0m  CREATE TABLE "triggers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "pending_item_id" integer, "pending_item_type" varchar(255), "due_at" datetime, "trigger_method" varchar(255)) 
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "password" varchar(255), "email" text, "name" text, "notify_via_email" boolean, "notify_on_new_articles" boolean, "notify_on_comments" boolean, "profile_id" integer, "remember_token" varchar(255), "remember_token_expires_at" datetime, "text_filter_id" varchar(255) DEFAULT '1', "state" varchar(255) DEFAULT 'active', "last_connection" datetime, "settings" text) 
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (5.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35mSQL (7.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (7.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('104')[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('67')
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('41')
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('23')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('57')
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('35')[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('90')
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('69')[0m
+  [1m[35mSQL (7.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('45')
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('88')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('44')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('28')[0m
+  [1m[35mSQL (8.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('9')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('53')[0m
+  [1m[35mSQL (7.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('48')
+  [1m[36mSQL (7.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('78')[0m
+  [1m[35mSQL (7.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('58')
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('97')[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('8')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('15')[0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('102')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('95')[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('36')[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('87')
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('49')[0m
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('12')
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('70')[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('96')
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('64')[0m
+  [1m[35mSQL (5.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('55')
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('101')[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('61')
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('86')[0m
+  [1m[35mSQL (7.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('80')
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('84')[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('60')
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('91')[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('82')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('43')[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('89')
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('76')[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('54')
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('34')[0m
+  [1m[35mSQL (6.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('17')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('47')[0m
+  [1m[35mSQL (5.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('93')
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('31')[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('73')
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('39')[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('85')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('26')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('98')
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('29')[0m
+  [1m[35mSQL (7.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('51')
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('33')[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('32')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('52')[0m
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('63')
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('103')[0m
+  [1m[35mSQL (5.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('22')
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('77')[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('18')
+  [1m[36mSQL (4.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('92')[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('40')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('62')[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('42')
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('59')[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('19')
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('10')[0m
+  [1m[35mSQL (7.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('6')
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('56')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('74')
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('83')[0m
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('75')
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('71')[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('13')
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('24')[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2')
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('46')[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('3')
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('25')[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('14')
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('81')[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('100')
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('30')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('94')
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('65')[0m
+  [1m[35mSQL (6.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('72')
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('11')[0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('50')
+  [1m[36mSQL (7.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('37')[0m
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('16')
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('99')[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('27')
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('66')[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('38')
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('68')[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('21')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('79')[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('7')
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/saasbook/Documents/typo/config/environment.rb:5)
+TypoPlugins: just registered plugin [TypoPlugins::Gravatar] for :avatar target.
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (53.0ms)[0m  CREATE TABLE "articles_tags" ("article_id" integer, "tag_id" integer) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.1ms)[0m  CREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "settings" text, "base_url" varchar(255)) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.0ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "position" integer, "permalink" varchar(255), "keywords" text, "description" text, "parent_id" integer) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("categories")[0m
+  [1m[35mSQL (6.1ms)[0m  CREATE INDEX "index_categories_on_permalink" ON "categories" ("permalink")
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.3ms)[0m  CREATE TABLE "categorizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "article_id" integer, "category_id" integer, "is_primary" boolean) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (67.0ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "title" varchar(255), "author" varchar(255), "body" text, "extended" text, "excerpt" text, "created_at" datetime, "updated_at" datetime, "user_id" integer, "permalink" varchar(255), "guid" varchar(255), "text_filter_id" integer, "whiteboard" text, "name" varchar(255), "published" boolean DEFAULT 'f', "allow_pings" boolean, "allow_comments" boolean, "published_at" datetime, "state" varchar(255), "parent_id" integer, "settings" text, "post_type" varchar(255) DEFAULT 'read') 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("contents")[0m
+  [1m[35mSQL (6.3ms)[0m  CREATE INDEX "index_contents_on_published" ON "contents" ("published")
+  [1m[36mSQL (0.2ms)[0m  [1mPRAGMA index_list("contents")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_contents_on_published')
+  [1m[36mSQL (5.8ms)[0m  [1mCREATE INDEX "index_contents_on_text_filter_id" ON "contents" ("text_filter_id")[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (9.1ms)[0m  [1mCREATE TABLE "feedback" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "title" varchar(255), "author" varchar(255), "body" text, "excerpt" text, "created_at" datetime, "updated_at" datetime, "user_id" integer, "guid" varchar(255), "text_filter_id" integer, "whiteboard" text, "article_id" integer, "email" varchar(255), "url" varchar(255), "ip" varchar(40), "blog_name" varchar(255), "published" boolean DEFAULT 'f', "published_at" datetime, "state" varchar(255), "status_confirmed" boolean) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("feedback")
+  [1m[36mSQL (6.2ms)[0m  [1mCREATE INDEX "index_feedback_on_article_id" ON "feedback" ("article_id")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("feedback")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_feedback_on_article_id')[0m
+  [1m[35mSQL (6.5ms)[0m  CREATE INDEX "index_feedback_on_text_filter_id" ON "feedback" ("text_filter_id")
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.3ms)[0m  CREATE TABLE "notifications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content_id" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.2ms)[0m  CREATE TABLE "page_caches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("page_caches")[0m
+  [1m[35mSQL (5.9ms)[0m  CREATE INDEX "index_page_caches_on_name" ON "page_caches" ("name")
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (8.6ms)[0m  CREATE TABLE "pings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "article_id" integer, "url" varchar(255), "created_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("pings")[0m
+  [1m[35mSQL (6.6ms)[0m  CREATE INDEX "index_pings_on_article_id" ON "pings" ("article_id")
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.6ms)[0m  CREATE TABLE "post_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "permalink" varchar(255), "description" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.9ms)[0m  CREATE TABLE "profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "label" varchar(255), "nicename" varchar(255), "modules" text) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.2ms)[0m  CREATE TABLE "profiles_rights" ("profile_id" integer, "right_id" integer) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.5ms)[0m  CREATE TABLE "redirections" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content_id" integer, "redirect_id" integer) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (5.9ms)[0m  CREATE TABLE "redirects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "from_path" varchar(255), "to_path" varchar(255), "origin" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (8.1ms)[0m  CREATE TABLE "resources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "size" integer, "filename" varchar(255), "mime" varchar(255), "created_at" datetime, "updated_at" datetime, "article_id" integer, "itunes_metadata" boolean, "itunes_author" varchar(255), "itunes_subtitle" varchar(255), "itunes_duration" integer, "itunes_summary" text, "itunes_keywords" varchar(255), "itunes_category" varchar(255), "itunes_explicit" boolean) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.9ms)[0m  CREATE TABLE "rights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.7ms)[0m  CREATE TABLE "sidebars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "active_position" integer, "config" text, "staged_position" integer, "type" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.9ms)[0m  CREATE TABLE "sitealizer" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "path" varchar(255), "ip" varchar(255), "referer" varchar(255), "language" varchar(255), "user_agent" varchar(255), "created_at" datetime, "created_on" date) 
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.3ms)[0m  CREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime, "display_name" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.1ms)[0m  CREATE TABLE "text_filters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "markup" varchar(255), "filters" text, "params" text) 
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.7ms)[0m  CREATE TABLE "triggers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "pending_item_id" integer, "pending_item_type" varchar(255), "due_at" datetime, "trigger_method" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (8.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "password" varchar(255), "email" text, "name" text, "notify_via_email" boolean, "notify_on_new_articles" boolean, "notify_on_comments" boolean, "profile_id" integer, "remember_token" varchar(255), "remember_token_expires_at" datetime, "text_filter_id" varchar(255) DEFAULT '1', "state" varchar(255) DEFAULT 'active', "last_connection" datetime, "settings" text) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (9.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35mSQL (7.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (8.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('104')[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('67')
+  [1m[36mSQL (7.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [1m[35mSQL (9.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('41')
+  [1m[36mSQL (7.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('23')[0m
+  [1m[35mSQL (7.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('57')
+  [1m[36mSQL (7.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('35')[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('90')
+  [1m[36mSQL (8.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('69')[0m
+  [1m[35mSQL (8.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('45')
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('88')[0m
+  [1m[35mSQL (7.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('44')
+  [1m[36mSQL (8.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('28')[0m
+  [1m[35mSQL (7.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('9')
+  [1m[36mSQL (7.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('53')[0m
+  [1m[35mSQL (7.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('48')
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('78')[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('58')
+  [1m[36mSQL (9.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('97')[0m
+  [1m[35mSQL (6.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('8')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('15')[0m
+  [1m[35mSQL (9.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('102')
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('95')[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20')
+  [1m[36mSQL (8.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('36')[0m
+  [1m[35mSQL (8.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('87')
+  [1m[36mSQL (11.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('49')[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('12')
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('70')[0m
+  [1m[35mSQL (9.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('96')
+  [1m[36mSQL (8.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('64')[0m
+  [1m[35mSQL (8.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('55')
+  [1m[36mSQL (9.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('101')[0m
+  [1m[35mSQL (7.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('61')
+  [1m[36mSQL (7.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('86')[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('80')
+  [1m[36mSQL (7.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('84')[0m
+  [1m[35mSQL (8.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('60')
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('91')[0m
+  [1m[35mSQL (6.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('82')
+  [1m[36mSQL (8.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('43')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('89')
+  [1m[36mSQL (7.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('76')[0m
+  [1m[35mSQL (8.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('54')
+  [1m[36mSQL (9.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('34')[0m
+  [1m[35mSQL (6.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('17')
+  [1m[36mSQL (7.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('47')[0m
+  [1m[35mSQL (9.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('93')
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('31')[0m
+  [1m[35mSQL (6.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('73')
+  [1m[36mSQL (9.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('39')[0m
+  [1m[35mSQL (7.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('85')
+  [1m[36mSQL (8.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('26')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('98')
+  [1m[36mSQL (8.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('29')[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('51')
+  [1m[36mSQL (7.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('33')[0m
+  [1m[35mSQL (8.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('32')
+  [1m[36mSQL (9.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('52')[0m
+  [1m[35mSQL (8.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('63')
+  [1m[36mSQL (7.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('103')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('22')
+  [1m[36mSQL (9.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('77')[0m
+  [1m[35mSQL (7.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('18')
+  [1m[36mSQL (7.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('92')[0m
+  [1m[35mSQL (8.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('40')
+  [1m[36mSQL (9.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('62')[0m
+  [1m[35mSQL (7.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('42')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('59')[0m
+  [1m[35mSQL (7.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('19')
+  [1m[36mSQL (9.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('10')[0m
+  [1m[35mSQL (8.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('6')
+  [1m[36mSQL (8.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('56')[0m
+  [1m[35mSQL (9.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('74')
+  [1m[36mSQL (10.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('83')[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('75')
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('71')[0m
+  [1m[35mSQL (9.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('13')
+  [1m[36mSQL (10.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('24')[0m
+  [1m[35mSQL (9.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2')
+  [1m[36mSQL (6.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('46')[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('3')
+  [1m[36mSQL (10.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('25')[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('14')
+  [1m[36mSQL (6.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('81')[0m
+  [1m[35mSQL (9.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('100')
+  [1m[36mSQL (9.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('30')[0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('94')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('65')[0m
+  [1m[35mSQL (9.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('72')
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('11')[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('50')
+  [1m[36mSQL (8.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [1m[35mSQL (10.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36mSQL (8.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('37')[0m
+  [1m[35mSQL (8.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('16')
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('99')[0m
+  [1m[35mSQL (8.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('27')
+  [1m[36mSQL (7.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('66')[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('38')
+  [1m[36mSQL (8.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('68')[0m
+  [1m[35mSQL (7.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('21')
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('79')[0m
+  [1m[35mSQL (9.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('7')
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/saasbook/Documents/typo/config/environment.rb:5)
+TypoPlugins: just registered plugin [TypoPlugins::Gravatar] for :avatar target.
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-12 18:50:41 -0400
+  Processing by ArticlesController#index as HTML
+  [1m[36mTrigger Load (0.8ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-12 22:50:42.529184')[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+Redirected to http://localhost:3000/setup
+Completed 302 Found in 216ms
+
+
+Started GET "/setup" for 127.0.0.1 at 2015-11-12 18:50:42 -0400
+  Processing by SetupController#index as HTML
+  [1m[36mTrigger Load (0.2ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-12 22:50:43.416733')[0m
+  [1m[35mBlog Load (0.3ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+Rendered setup/index.html.erb within layouts/accounts (5.1ms)
+Completed 200 OK in 67ms (Views: 50.0ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/setup" for 127.0.0.1 at 2015-11-12 18:50:51 -0400
+  Processing by SetupController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qIZFxQ30gL8koTYE3O64CxHTDYkEowbM6hlZ9W7PAs4=", "setting"=>{"blog_name"=>"sad", "email"=>"a@a.com"}}
+  [1m[36mTrigger Load (0.2ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-12 22:50:52.232938')[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."label" = 'admin' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."login" = 'admin') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'a@a.com') LIMIT 1[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE "blogs" SET "base_url" = 'http://localhost:3000', "settings" = '---
+canonical_server_url: ''''
+blog_name: sad
+' WHERE "blogs"."id" = 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE ("users"."login" = 'admin') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'a@a.com') LIMIT 1[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1[0m
+Rendered notification_mailer/_mail_header.html.erb (0.4ms)
+Rendered notification_mailer/notif_user.html.erb (8.8ms)
+
+Sent mail to a@a.com (142ms)
+Date: Thu, 12 Nov 2015 18:50:52 -0400
+From: typo@example.com
+To: a@a.com
+Message-ID: <564517cd3a3_21b7616044e6886e@saasbook.mail>
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+X-Mailer: Typo 6.1.0
+
+<html>
+<body>
+  <p>Your <a href="http://localhost:3000">sad</a> account has been created.</p>
+
+  <div style="margin:1em;padding:4px;background:#eee;border:1px solid black">
+
+    <p>Your credentials appear below.</p>
+
+    <ul>
+      <li>Login: admin</li>
+      <li>Password: Pi1vIE7</li>
+    </ul>
+  </div>
+</body>
+</html>
+  [1m[35mAREL (0.7ms)[0m  INSERT INTO "users" ("login", "password", "email", "name", "notify_via_email", "notify_on_new_articles", "notify_on_comments", "profile_id", "remember_token", "remember_token_expires_at", "text_filter_id", "state", "last_connection", "settings") VALUES ('admin', '2686588e55563268f3a60b763f9444829cb33d27', 'a@a.com', 'admin', NULL, NULL, NULL, 1, NULL, NULL, '1', 'active', NULL, '--- {}
+')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (1.4ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."type" = 'Article' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "contents" WHERE "contents"."type" = 'Article' AND ("contents"."guid" = '59accdc7-3437-47c1-96a9-5f6eb80b9145') AND ("contents".id <> 1) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE "contents" SET "settings" = '---
+password: 
+', "whiteboard" = NULL WHERE "contents"."type" = 'Article' AND "contents"."id" = 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 )[0m
+  [1m[35mRedirect Load (0.2ms)[0m  SELECT "redirects".* FROM "redirects" WHERE "redirects"."from_path" = 'oBuD1v' LIMIT 1
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1[0m
+  [1m[35mRedirect Load (0.3ms)[0m  SELECT "redirects".* FROM "redirects" INNER JOIN "redirections" ON "redirects".id = "redirections".redirect_id WHERE (("redirections".content_id = 1)) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "redirects" WHERE ("redirects"."from_path" = 'oBuD1v') LIMIT 1[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "redirects" ("from_path", "to_path", "origin", "created_at", "updated_at") VALUES ('oBuD1v', 'http://localhost:3000/2015/11/10/hello-world', NULL, '2015-11-12 22:50:53.346041', '2015-11-12 22:50:53.346041')
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "redirections" ("content_id", "redirect_id") VALUES (1, 1)[0m
+Redirected to http://localhost:3000/setup/confirm
+Completed 302 Found in 1231ms
+
+
+Started GET "/setup/confirm" for 127.0.0.1 at 2015-11-12 18:50:53 -0400
+  Processing by SetupController#confirm as HTML
+  [1m[35mTrigger Load (0.4ms)[0m  SELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-12 22:50:54.067997')
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered shared/_confirm.html.erb (35.2ms)
+Rendered setup/confirm.html.erb within layouts/accounts (57.3ms)
+Completed 200 OK in 119ms (Views: 59.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-12 18:50:55 -0400
+  Processing by Admin::DashboardController#index as HTML
+  [1m[36mTrigger Load (0.2ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-12 22:50:56.631629')[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+  [1m[36mUser Load (5.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mProfile Load (0.3ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "contents" WHERE "contents"."type" = 'Article' AND (published = 't' and published_at > NULL)[0m
+  [1m[35mSQL (2.8ms)[0m  SELECT COUNT(*) FROM "feedback" WHERE ((("feedback"."type" = 'Feedback' OR "feedback"."type" = 'Comment') OR "feedback"."type" = 'Trackback')) AND (state in ('presumed_ham','ham') and published_at > NULL)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "feedback".* FROM "feedback" WHERE "feedback"."type" = 'Comment' AND (published = 't') ORDER BY created_at DESC LIMIT 5[0m
+  [1m[35mArticle Load (0.8ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."type" = 'Article' AND (published = 't') ORDER BY published_at DESC LIMIT 5
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT contents.*, comment_counts.count AS comment_count FROM contents, (SELECT feedback.article_id AS article_id, COUNT(feedback.id) as count FROM feedback WHERE feedback.state IN ('presumed_ham', 'ham') GROUP BY feedback.article_id ORDER BY count DESC LIMIT 9) AS comment_counts WHERE "contents"."type" = 'Article' AND (comment_counts.article_id = contents.id AND published = 't') ORDER BY comment_counts.count DESC LIMIT 5[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "contents" WHERE "contents"."type" = 'Article' AND "contents"."published" = 't' AND ("contents"."published_at" BETWEEN '1970-01-01 00:00:00.000000' AND '2015-11-12 22:50:56.853277')
+  [1m[36mSQL (1.2ms)[0m  [1mSELECT COUNT(*) FROM "contents" WHERE "contents"."type" = 'Article' AND "contents"."published" = 't' AND "contents"."user_id" = 1 AND ("contents"."published_at" BETWEEN '1970-01-01 00:00:00.000000' AND '2015-11-12 22:50:56.854410')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "feedback" WHERE "feedback"."type" = 'Comment' AND (state != 'spam')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "feedback" WHERE "feedback"."type" = 'Comment' AND "feedback"."state" = 'spam'[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "feedback" WHERE "feedback"."type" = 'Comment' AND "feedback"."state" = 'presumed_spam'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+Rendered admin/dashboard/_overview.html.erb (1.9ms)
+Rendered admin/dashboard/_welcome.html.erb (2.8ms)
+Rendered admin/dashboard/_comments.html.erb (2.2ms)
+Rendered admin/dashboard/_popular.html.erb (0.7ms)
+Rendered admin/dashboard/_inbound.html.erb (0.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+Rendered admin/dashboard/_posts.html.erb (30.1ms)
+Rendered admin/dashboard/_typo_dev.html.erb (2.0ms)
+Rendered admin/dashboard/index.html.erb within layouts/administration (182.1ms)
+Completed 200 OK in 3500ms (Views: 475.6ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2015-11-12 18:51:03 -0400
+  Processing by Admin::CategoriesController#new as HTML
+  Parameters: {"id"=>nil}
+  [1m[36mTrigger Load (0.2ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-12 22:51:04.185037')[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mProfile Load (1.4ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY name ASC[0m
+  [1m[35mSQL (3.6ms)[0m  SELECT COUNT(*) FROM "contents" INNER JOIN "categorizations" ON "contents".id = "categorizations".article_id WHERE "contents"."type" = 'Article' AND (("categorizations".category_id = 1))
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1[0m
+Rendered admin/categories/new.html.erb within layouts/administration (131.0ms)
+Completed 200 OK in 309ms (Views: 190.1ms | ActiveRecord: 15.8ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/saasbook/Documents/typo/config/environment.rb:5)
+TypoPlugins: just registered plugin [TypoPlugins::Gravatar] for :avatar target.
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.6ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (45.6ms)[0m  CREATE TABLE "articles_tags" ("article_id" integer, "tag_id" integer) 
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (10.1ms)[0m  CREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "settings" text, "base_url" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (8.9ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "position" integer, "permalink" varchar(255), "keywords" text, "description" text, "parent_id" integer) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("categories")[0m
+  [1m[35mSQL (17.8ms)[0m  CREATE INDEX "index_categories_on_permalink" ON "categories" ("permalink")
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (10.5ms)[0m  CREATE TABLE "categorizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "article_id" integer, "category_id" integer, "is_primary" boolean) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (8.1ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "title" varchar(255), "author" varchar(255), "body" text, "extended" text, "excerpt" text, "created_at" datetime, "updated_at" datetime, "user_id" integer, "permalink" varchar(255), "guid" varchar(255), "text_filter_id" integer, "whiteboard" text, "name" varchar(255), "published" boolean DEFAULT 'f', "allow_pings" boolean, "allow_comments" boolean, "published_at" datetime, "state" varchar(255), "parent_id" integer, "settings" text, "post_type" varchar(255) DEFAULT 'read') 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("contents")[0m
+  [1m[35mSQL (6.3ms)[0m  CREATE INDEX "index_contents_on_published" ON "contents" ("published")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("contents")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_contents_on_published')
+  [1m[36mSQL (6.2ms)[0m  [1mCREATE INDEX "index_contents_on_text_filter_id" ON "contents" ("text_filter_id")[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (9.0ms)[0m  [1mCREATE TABLE "feedback" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "title" varchar(255), "author" varchar(255), "body" text, "excerpt" text, "created_at" datetime, "updated_at" datetime, "user_id" integer, "guid" varchar(255), "text_filter_id" integer, "whiteboard" text, "article_id" integer, "email" varchar(255), "url" varchar(255), "ip" varchar(40), "blog_name" varchar(255), "published" boolean DEFAULT 'f', "published_at" datetime, "state" varchar(255), "status_confirmed" boolean) [0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("feedback")
+  [1m[36mSQL (5.4ms)[0m  [1mCREATE INDEX "index_feedback_on_article_id" ON "feedback" ("article_id")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("feedback")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_feedback_on_article_id')[0m
+  [1m[35mSQL (6.2ms)[0m  CREATE INDEX "index_feedback_on_text_filter_id" ON "feedback" ("text_filter_id")
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (8.6ms)[0m  CREATE TABLE "notifications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content_id" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (5.4ms)[0m  CREATE TABLE "page_caches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("page_caches")[0m
+  [1m[35mSQL (6.0ms)[0m  CREATE INDEX "index_page_caches_on_name" ON "page_caches" ("name")
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.0ms)[0m  CREATE TABLE "pings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "article_id" integer, "url" varchar(255), "created_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("pings")[0m
+  [1m[35mSQL (6.5ms)[0m  CREATE INDEX "index_pings_on_article_id" ON "pings" ("article_id")
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.5ms)[0m  CREATE TABLE "post_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "permalink" varchar(255), "description" varchar(255)) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.5ms)[0m  CREATE TABLE "profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "label" varchar(255), "nicename" varchar(255), "modules" text) 
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.2ms)[0m  CREATE TABLE "profiles_rights" ("profile_id" integer, "right_id" integer) 
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.6ms)[0m  CREATE TABLE "redirections" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content_id" integer, "redirect_id" integer) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.3ms)[0m  CREATE TABLE "redirects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "from_path" varchar(255), "to_path" varchar(255), "origin" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.7ms)[0m  CREATE TABLE "resources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "size" integer, "filename" varchar(255), "mime" varchar(255), "created_at" datetime, "updated_at" datetime, "article_id" integer, "itunes_metadata" boolean, "itunes_author" varchar(255), "itunes_subtitle" varchar(255), "itunes_duration" integer, "itunes_summary" text, "itunes_keywords" varchar(255), "itunes_category" varchar(255), "itunes_explicit" boolean) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (8.0ms)[0m  CREATE TABLE "rights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.6ms)[0m  CREATE TABLE "sidebars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "active_position" integer, "config" text, "staged_position" integer, "type" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.2ms)[0m  CREATE TABLE "sitealizer" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "path" varchar(255), "ip" varchar(255), "referer" varchar(255), "language" varchar(255), "user_agent" varchar(255), "created_at" datetime, "created_on" date) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.0ms)[0m  CREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime, "display_name" varchar(255)) 
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.2ms)[0m  CREATE TABLE "text_filters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "markup" varchar(255), "filters" text, "params" text) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (6.8ms)[0m  CREATE TABLE "triggers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "pending_item_id" integer, "pending_item_type" varchar(255), "due_at" datetime, "trigger_method" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (7.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "password" varchar(255), "email" text, "name" text, "notify_via_email" boolean, "notify_on_new_articles" boolean, "notify_on_comments" boolean, "profile_id" integer, "remember_token" varchar(255), "remember_token_expires_at" datetime, "text_filter_id" varchar(255) DEFAULT '1', "state" varchar(255) DEFAULT 'active', "last_connection" datetime, "settings" text) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (5.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35mSQL (6.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('104')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('67')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('41')
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('23')[0m
+  [1m[35mSQL (7.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('57')
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('35')[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('90')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('69')[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('45')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('88')[0m
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('44')
+  [1m[36mSQL (7.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('28')[0m
+  [1m[35mSQL (6.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('9')
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('53')[0m
+  [1m[35mSQL (7.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('48')
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('78')[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('58')
+  [1m[36mSQL (7.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('97')[0m
+  [1m[35mSQL (6.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('8')
+  [1m[36mSQL (6.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('15')[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('102')
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('95')[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20')
+  [1m[36mSQL (6.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('36')[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('87')
+  [1m[36mSQL (6.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('49')[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('12')
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('70')[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('96')
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('64')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('55')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('101')[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('61')
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('86')[0m
+  [1m[35mSQL (6.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('80')
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('84')[0m
+  [1m[35mSQL (11.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('60')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('91')[0m
+  [1m[35mSQL (7.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('82')
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('43')[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('89')
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('76')[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('54')
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('34')[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('17')
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('47')[0m
+  [1m[35mSQL (6.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('93')
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('31')[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('73')
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('39')[0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('85')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('26')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('98')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('29')[0m
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('51')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('33')[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('32')
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('52')[0m
+  [1m[35mSQL (7.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('63')
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('103')[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('22')
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('77')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('18')
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('92')[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('40')
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('62')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('42')
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('59')[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('19')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('10')[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('6')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('56')[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('74')
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('83')[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('75')
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('71')[0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('13')
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('24')[0m
+  [1m[35mSQL (7.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('2')
+  [1m[36mSQL (7.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('46')[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('3')
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('25')[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('14')
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('81')[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('100')
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('30')[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('94')
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('65')[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('72')
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('11')[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('50')
+  [1m[36mSQL (7.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('37')[0m
+  [1m[35mSQL (6.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('16')
+  [1m[36mSQL (6.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('99')[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('27')
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('66')[0m
+  [1m[35mSQL (8.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('38')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('68')[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('21')
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('79')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('7')
