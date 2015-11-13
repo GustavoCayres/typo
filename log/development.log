@@ -3567,3 +3567,166 @@ Migrating to AddsCreatedAtToRedirects (104)
   [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("text_filters")[0m
   [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("triggers")
   [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/saasbook/typo/config/environment.rb:5)
+TypoPlugins: just registered plugin [TypoPlugins::Gravatar] for :avatar target.
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-12 19:52:03 -0400
+  Processing by ArticlesController#index as HTML
+  [1m[36mTrigger Load (1.2ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-12 23:52:04.322048')[0m
+  [1m[35mBlog Load (0.1ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+Redirected to http://localhost:3000/setup
+Completed 302 Found in 221ms
+
+
+Started GET "/setup" for 127.0.0.1 at 2015-11-12 19:52:04 -0400
+  Processing by SetupController#index as HTML
+  [1m[36mTrigger Load (0.3ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-12 23:52:05.530472')[0m
+  [1m[35mBlog Load (0.3ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+Rendered setup/index.html.erb within layouts/accounts (5.7ms)
+Completed 200 OK in 47ms (Views: 19.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-12 20:00:17 -0400
+  Processing by ArticlesController#index as HTML
+  [1m[36mTrigger Load (0.4ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-13 00:00:18.463786')[0m
+  [1m[35mBlog Load (0.3ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+Redirected to http://localhost:3000/setup
+Completed 302 Found in 26ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-12 20:00:18 -0400
+  Processing by ArticlesController#index as HTML
+  [1m[36mTrigger Load (0.2ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-13 00:00:19.587050')[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+Redirected to http://localhost:3000/setup
+Completed 302 Found in 25ms
+
+
+Started GET "/setup" for 127.0.0.1 at 2015-11-12 20:00:19 -0400
+  Processing by SetupController#index as HTML
+  [1m[36mTrigger Load (0.2ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-13 00:00:20.906893')[0m
+  [1m[35mBlog Load (0.4ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+Rendered setup/index.html.erb within layouts/accounts (6.6ms)
+Completed 200 OK in 77ms (Views: 44.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/setup" for 127.0.0.1 at 2015-11-12 20:00:20 -0400
+  Processing by SetupController#index as HTML
+  [1m[36mTrigger Load (0.3ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-13 00:00:22.579691')[0m
+  [1m[35mBlog Load (0.4ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+Rendered setup/index.html.erb within layouts/accounts (11.2ms)
+Completed 200 OK in 89ms (Views: 28.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/setup" for 127.0.0.1 at 2015-11-12 20:00:36 -0400
+  Processing by SetupController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K48+rljbP2KESzc/nYSnvPz6Fi7u1HRecONMdVkvEkc=", "setting"=>{"blog_name"=>"MyBlog", "email"=>"gustavocayrespublico@gmail.com"}}
+  [1m[36mTrigger Load (0.4ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-13 00:00:37.805810')[0m
+  [1m[35mBlog Load (0.3ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."label" = 'admin' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."login" = 'admin') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'gustavocayrespublico@gmail.com') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  UPDATE "blogs" SET "base_url" = 'http://localhost:3000', "settings" = '---
+canonical_server_url: ''''
+blog_name: MyBlog
+' WHERE "blogs"."id" = 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."login" = 'admin') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'gustavocayrespublico@gmail.com') LIMIT 1[0m
+  [1m[35mBlog Load (0.3ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1[0m
+Rendered notification_mailer/_mail_header.html.erb (0.7ms)
+Rendered notification_mailer/notif_user.html.erb (10.5ms)
+
+Sent mail to gustavocayrespublico@gmail.com (553ms)
+Date: Thu, 12 Nov 2015 20:00:38 -0400
+From: typo@example.com
+To: gustavocayrespublico@gmail.com
+Message-ID: <564528285022_14f35fee82c12926@saasbook.mail>
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+X-Mailer: Typo 6.1.0
+
+<html>
+<body>
+  <p>Your <a href="http://localhost:3000">MyBlog</a> account has been created.</p>
+
+  <div style="margin:1em;padding:4px;background:#eee;border:1px solid black">
+
+    <p>Your credentials appear below.</p>
+
+    <ul>
+      <li>Login: admin</li>
+      <li>Password: vzJOSbL</li>
+    </ul>
+  </div>
+</body>
+</html>
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "users" ("login", "password", "email", "name", "notify_via_email", "notify_on_new_articles", "notify_on_comments", "profile_id", "remember_token", "remember_token_expires_at", "text_filter_id", "state", "last_connection", "settings") VALUES ('admin', '42e939c61269406738ada167d4433efebf810512', 'gustavocayrespublico@gmail.com', 'admin', NULL, NULL, NULL, 1, NULL, NULL, '1', 'active', NULL, '--- {}
+')
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (2.9ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."type" = 'Article' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "contents" WHERE "contents"."type" = 'Article' AND ("contents"."guid" = 'c737fe9f-6a6c-4d72-a186-0c81d13ad9b6') AND ("contents".id <> 1) LIMIT 1[0m
+  [1m[35mAREL (0.5ms)[0m  UPDATE "contents" SET "settings" = '---
+password: 
+', "whiteboard" = NULL WHERE "contents"."type" = 'Article' AND "contents"."id" = 1
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 )[0m
+  [1m[35mRedirect Load (0.7ms)[0m  SELECT "redirects".* FROM "redirects" WHERE "redirects"."from_path" = 'sMqIxt' LIMIT 1
+  [1m[36mBlog Load (0.9ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1[0m
+  [1m[35mRedirect Load (0.2ms)[0m  SELECT "redirects".* FROM "redirects" INNER JOIN "redirections" ON "redirects".id = "redirections".redirect_id WHERE (("redirections".content_id = 1)) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "redirects" WHERE ("redirects"."from_path" = 'sMqIxt') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "redirects" ("from_path", "to_path", "origin", "created_at", "updated_at") VALUES ('sMqIxt', 'http://localhost:3000/2015/11/12/hello-world', NULL, '2015-11-13 00:00:40.673262', '2015-11-13 00:00:40.673262')
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "redirections" ("content_id", "redirect_id") VALUES (1, 1)[0m
+Redirected to http://localhost:3000/setup/confirm
+Completed 302 Found in 2967ms
+
+
+Started GET "/setup/confirm" for 127.0.0.1 at 2015-11-12 20:00:40 -0400
+  Processing by SetupController#confirm as HTML
+  [1m[35mTrigger Load (0.3ms)[0m  SELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-13 00:00:42.055750')
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1[0m
+  [1m[35mUser Load (7.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered shared/_confirm.html.erb (200.8ms)
+Rendered setup/confirm.html.erb within layouts/accounts (209.7ms)
+Completed 200 OK in 244ms (Views: 207.6ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-12 20:01:06 -0400
+  Processing by Admin::DashboardController#index as HTML
+  [1m[36mTrigger Load (0.3ms)[0m  [1mSELECT "triggers".* FROM "triggers" WHERE (due_at <= '2015-11-13 00:01:09.320218')[0m
+  [1m[35mBlog Load (0.3ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mProfile Load (1.9ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (1.5ms)[0m  [1mSELECT COUNT(*) FROM "contents" WHERE "contents"."type" = 'Article' AND (published = 't' and published_at > NULL)[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT COUNT(*) FROM "feedback" WHERE ((("feedback"."type" = 'Feedback' OR "feedback"."type" = 'Comment') OR "feedback"."type" = 'Trackback')) AND (state in ('presumed_ham','ham') and published_at > NULL)
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "feedback".* FROM "feedback" WHERE "feedback"."type" = 'Comment' AND (published = 't') ORDER BY created_at DESC LIMIT 5[0m
+  [1m[35mArticle Load (1.7ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."type" = 'Article' AND (published = 't') ORDER BY published_at DESC LIMIT 5
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT contents.*, comment_counts.count AS comment_count FROM contents, (SELECT feedback.article_id AS article_id, COUNT(feedback.id) as count FROM feedback WHERE feedback.state IN ('presumed_ham', 'ham') GROUP BY feedback.article_id ORDER BY count DESC LIMIT 9) AS comment_counts WHERE "contents"."type" = 'Article' AND (comment_counts.article_id = contents.id AND published = 't') ORDER BY comment_counts.count DESC LIMIT 5[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "contents" WHERE "contents"."type" = 'Article' AND "contents"."published" = 't' AND ("contents"."published_at" BETWEEN '1970-01-01 00:00:00.000000' AND '2015-11-13 00:01:09.802908')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contents" WHERE "contents"."type" = 'Article' AND "contents"."published" = 't' AND "contents"."user_id" = 1 AND ("contents"."published_at" BETWEEN '1970-01-01 00:00:00.000000' AND '2015-11-13 00:01:09.810626')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "feedback" WHERE "feedback"."type" = 'Comment' AND (state != 'spam')
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "feedback" WHERE "feedback"."type" = 'Comment' AND "feedback"."state" = 'spam'[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "feedback" WHERE "feedback"."type" = 'Comment' AND "feedback"."state" = 'presumed_spam'
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+Rendered admin/dashboard/_overview.html.erb (3.3ms)
+Rendered admin/dashboard/_welcome.html.erb (4.9ms)
+Rendered admin/dashboard/_comments.html.erb (1.2ms)
+Rendered admin/dashboard/_popular.html.erb (1.0ms)
+Rendered admin/dashboard/_inbound.html.erb (3.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1
+Rendered admin/dashboard/_posts.html.erb (62.3ms)
+Rendered admin/dashboard/_typo_dev.html.erb (8.9ms)
+Rendered admin/dashboard/index.html.erb within layouts/administration (137.7ms)
+Completed 200 OK in 3797ms (Views: 299.0ms | ActiveRecord: 12.3ms)
