@@ -15,7 +15,18 @@ describe Admin::CategoriesController do
     get :index
     assert_response :redirect, :action => 'index'
   end
-
+  
+  describe "test_new"  do
+    before(:each) do
+      get :new
+    end
+    it 'should render template new' do
+      assert_template 'new'
+      assert_tag :tag => "table",
+        :attributes => { :id => "category_container" }
+    end
+  end
+  
   describe "test_edit" do
     before(:each) do
       get :edit, :id => Factory(:category).id
@@ -38,7 +49,7 @@ describe Admin::CategoriesController do
     post :edit, :id => Factory(:category).id
     assert_response :redirect, :action => 'index'
   end
-#.
+
   describe "test_destroy with GET" do
     before(:each) do
       test_id = Factory(:category).id
