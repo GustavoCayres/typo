@@ -16,17 +16,25 @@ describe Admin::CategoriesController do
     assert_response :redirect, :action => 'index'
   end
   
+# teste novo 
   describe "test_new"  do
-    before(:each) do
+    before do
       get :new
     end
+    
     it 'should render template new' do
       assert_template 'new'
       assert_tag :tag => "table",
         :attributes => { :id => "category_container" }
     end
   end
-  
+    
+  it 'should create a new category' do
+    post :new, :category => { :name => "Test Category", :keywords => "test", :description => "test" } 
+    assert_response :redirect, :action => 'index'
+  end
+# fim dos testes novos
+
   describe "test_edit" do
     before(:each) do
       get :edit, :id => Factory(:category).id
@@ -35,7 +43,7 @@ describe Admin::CategoriesController do
     it 'should render template new' do
       assert_template 'new'
       assert_tag :tag => "table",
-        :attributes => { :id => "category_container" }
+      :attributes => { :id => "category_container" }
     end
 
     it 'should have valid category' do
