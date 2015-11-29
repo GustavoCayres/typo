@@ -4321,3 +4321,5 @@ Started POST "/accounts/login" for 127.0.0.1 at 2015-11-13 14:26:15 -0400
   [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE (login = 'admin' AND password = 'd8e181361e329e678eee7fa17103cdb356a21f00' AND state = 'active') LIMIT 1[0m
 Rendered accounts/login.html.erb within layouts/accounts (4.0ms)
 Completed 200 OK in 40ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/saasbook/typo/config/environment.rb:5)
+TypoPlugins: just registered plugin [TypoPlugins::Gravatar] for :avatar target.
